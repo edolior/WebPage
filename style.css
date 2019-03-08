@@ -1,62 +1,95 @@
 body {
-    font-family: 'Varela Round';font-size: 22px;
-}
-
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: rgb(15, 51, 37);
+		font-family: 'Varela Round';
+		font-size: 18px;
 }
 
 .container {
-	overflow: hidden;
+	overflow: auto;
 	position: fixed; /* stays on top */
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	margin: 0 auto;
+	background: white;
+	right: 0;
+	left: 0;
+	top: 0;
+	overflow-y: auto;
+}
+
+header {
+	background: white;
+}
+
+.bottom_bar {
 	border-bottom: groove;
 	border-bottom-left-radius:  20px;
 	border-bottom-right-radius: 20px;
 	border-bottom-width: 20px;
 	border-bottom-style: ridge;
 	border-bottom-color: rgb(113, 199, 149);
-	background: white;
-	top: 0;
-	width: 99%;
-	margin-top: 0px;
-	margin-right: 20px;
-	/* margin: 0 auto; */
 }
 
-header {
-	background: rgb(255, 255, 255);
-}
-
-section {
+.section_w {
 	background-color: white;
 }
 
-section:header {
-	text-align: center;
-	width: 300px;
-	height: 300px;
-	margin-top: 25px;
-	/* margin: 0 auto; */
+.section_g {
+	background-color: #eee;
 }
 
-section:content {
-	margin: 0 auto;
-	font-size: small;
+.line {
+	display: block;
+	width: 290px;
+	height: 3px;
+	padding: 0!important;
+	background: rgb(113, 199, 149);
 }
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+.title {
+	text-align: center;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+.content {
+	margin: 0 auto;
+	font-size: medium;
+	padding-bottom: 25px;
+}
+
+iframe:focus {
+	outline: none;
+}
+
+.iframe_fix {
+	margin-left: 500px;
+}
+
+iframe[seamless] {
+	display: block;
+}
+
+/* Photos */
 
 .photo_album {
-	width: 500px;
-	height: 200px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 400px;
+	height: 300px;
 }
 
 .head_logo {
 	/* position: relative; */
-	margin-left: 0;
+	margin-right: 50px;
 	margin-top: 5px;
 	width: 125px;
 	height: 125px;
@@ -64,30 +97,26 @@ section:content {
 }
 
 .all_logos {
-	display: block; /* centers the photo */
 	/* text-indent: -999999px; */
 	/* background: url('C:/Users/edoli/Desktop/WebPage/about.png'); */
+	display: block; /* centers the photo */
 	width: 300px;
 	height: 300px;
-	margin-top: 0px;
-	/* float: left; */
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	border-radius: 50%;
 }
 
-.column { /* for the photos */
-	float: left;
-	width: 33.33%;
-	padding: 5px;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
-	content: "";
-	clear: both;
-	display: table;
-  }
+.q_logo {
+	display: block; /* centers the photo */
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.logo_fixed_margin {
+	margin-top: -60px;
+}
+
 
 header::after {
 	content: '';
@@ -95,22 +124,23 @@ header::after {
 	clear: both;
 }
 
+/* Navigation Bar */
+
 nav {
 	float: right;
 }
 
 nav ul {
-	margin: 0; /* above and lower spaces of bullets */
+	margin: 0 auto; /* above and lower spaces of bullets */
 	padding: 0; /* between bullets and titles */
 	list-style: none; /* bullets off */
 }
 
 nav li {
 	display: inline-block; /* text allignment in a row */
-	 margin-left: 50px; /* spaces between titles */
-	 padding-top: 50px;
-
-	 position: relative;
+	margin-left: 50px; /* spaces between titles */
+	padding-top: 90px;
+	position: relative;
 }
 
 nav a {
@@ -121,23 +151,24 @@ nav a {
 }
 
 nav a:hover {
-	color: rgb(62, 185, 114)
+	color: rgb(62, 185, 114);
+	text-decoration: none; /* no underlines */
 }
 
 nav a::before {
+	margin-top: 65px;
 	content: '';
 	display: block;
 	height: 5px;
 	width: 100%;
 	background-color: rgb(93, 230, 173);
-
 	position: absolute;
-	top: 1;
+	top: 0;
 	width: 0%;
 
 	transition: all ease-in-out 200ms; /* animation */
 }
 
-nav a:hover::before {
+nav a:hover::before {	
 	width: 100%;
 }
