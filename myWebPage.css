@@ -13,16 +13,19 @@ body {
 .container {
 	overflow: hidden;
 	position: fixed; /* stays on top */
+	padding-bottom: 20px;
 	border-bottom: groove;
 	border-bottom-left-radius:  20px;
 	border-bottom-right-radius: 20px;
 	border-bottom-width: 20px;
 	border-bottom-style: ridge;
+	border-bottom-color: rgb(113, 199, 149);
 	background: white;
 	top: 0;
-	width: 80%;
-	/* margin-left: 15px; */
-	margin: 0 auto;
+	width: 99%;
+	margin-top: 0px;
+	margin-right: 20px;
+	/* margin: 0 auto; */
 }
 
 header {
@@ -37,7 +40,8 @@ section:header {
 	text-align: center;
 	width: 300px;
 	height: 300px;
-	margin: 0 auto;	
+	margin-top: 25px;
+	/* margin: 0 auto; */
 }
 
 section:content {
@@ -45,7 +49,15 @@ section:content {
 	font-size: small;
 }
 
+.photo_album {
+	width: 500px;
+	height: 200px;
+}
+
 .head_logo {
+	/* position: relative; */
+	margin-left: 0;
+	margin-top: 5px;
 	width: 125px;
 	height: 125px;
 	border-radius: 50%;
@@ -54,7 +66,7 @@ section:content {
 .all_logos {
 	display: block; /* centers the photo */
 	/* text-indent: -999999px; */
-	/* background: url('C:/Users/edoli/Desktop/A1_webpage/about.png'); */
+	/* background: url('C:/Users/edoli/Desktop/WebPage/about.png'); */
 	width: 300px;
 	height: 300px;
 	margin-top: 0px;
