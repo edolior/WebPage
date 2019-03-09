@@ -24,7 +24,7 @@
     <!-- body -->
     <body>
         <header>       
-            <div class="container bottom_bar">   
+            <div class="header container bottom_bar">   
                 <img src="head_photo.jpg" class="head_logo">
                 <nav>
                     <ul>                      
@@ -54,11 +54,26 @@
             <div class="centered line"></div>
             <img src="about_logo.png" class="all_logos logo_fixed_margin">
             <br/>
-            <br/>
-            <p class="content">
-                I'm a student in the Information Systems Engineering Dept. at Ben-Gurion University of the Negev, Israel.
-                I acquired project and time management skills, as well as the ability to communicate with team members and clients while effectively meeting milestones and deadlines.
+            <div class="modal-body">
+            <p>
+                <strong class="d-block text-gray-dark"><u>Education</u></strong>
+                </br>
+                    I'm a student in the department of Information Systems Engineering at Ben-Gurion University of the Negev in Beer-Sheba, Israel. </br>
+                    Throughout the past 3 years I acquired many project and time management skills, as well as the ability to communicate with team </br>
+                    members while effectively meeting milestones and deadlines. </br>
             </p>
+            <p>
+                <strong class="d-block text-gray-dark"><u>Hobbies</u></strong>
+                </br>
+                    My hobbies are playing tennis, volleyball, soccer and basketball. </br>
+                    Listening to good music and hanging out with my pals at the beach. </br>
+            </p>
+            <p>
+                <strong class="d-block text-gray-dark"><u>Expectations</u></strong>
+                </br>
+                    Am greatly looking forward to learning new skills on web-based platforms and methods.
+            </p>
+            </div>
         </section>
 
         <section id="photos" class="section_g">
@@ -124,7 +139,7 @@
             <br/>
             <br/>
             <div align="center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL2tMgWgIvcWmvK3JqG7hiSJond0fCcXwr" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <br/>
             <br/>
@@ -163,17 +178,70 @@
             <h1 class=title> Q&A </h1>
             <div class="centered line"></div>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <div class="modal-body">
+                    Web 1.0 can be associated with the era of static websites. Web 2.0 can be associated with the era of interactive web sites. Web 3.0 focuses on web services and semantic markup.
+                    <br/>
+                    <br/>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Web 1.0</th>
+                          <th scope="col">Web 2.0</th>
+                          <th scope="col">Web 3.0</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Definition</th>
+                          <td>Read-only</td>
+                          <td>Read-write</td>
+                          <td>Read-write-execute</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Technologies</th>
+                          <td>File and Web Servers, E-mail, Search Engines, Content and Enterprise Portals, P2P File Sharing</td>
+                          <td>Ajax and JavaScript frameworks, Blogs, Wikis</td>
+                          <td>Semantic Searching, Knowledge Bases, Ontologies</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Type of Web</th>
+                          <td>Simply Web</td>
+                          <td>Social Web</td>
+                          <td>Semantic Web</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">No. of users</th>
+                          <td>Millions</td>
+                          <td>Billions</td>
+                          <td>Trillons</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Basic concept</th>
+                          <td>Connect information</td>
+                          <td>Connect people</td>
+                          <td>Connect knowledge</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Years</th>
+                          <td>1990-2000</td>
+                          <td>2000-2010</td>
+                          <td>2010-2020</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <br />
+                    <u>Use Case:</u>
+                    <br />
+                    <b>Web 1.0</b>: Search engines mainly boasted static, read-only search engines, with a low frequency of updates. Batch crawling.
+                    <br /><br />
+                    <b>Web 2.0</b>: Search engines find pages with relevant tags. Very high rate of updates. Personalization. Connect people.
+                    <br /><br />
+                    <b>Web 3.0</b>: AI and machine learning algorithms to discover new and relevant pages. Personalization. Connect knowledge.
+                                     
+                  </div>
+                </div>
             <br/>
         </section>
 
@@ -186,16 +254,22 @@
             <br/>
             <br/>
             <center>
-            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                Name:<br>
-                <input type="text" name="name" size="50"><br>
-                E-mail:<br>
-                <input type="text" name="mail" size="50"><br>
-                Comment:<br>
-                <input type="text" name="comment" size="150"><br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
-            </form>
+                <div class="container_contact">
+                    <form action="action_page.php">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="first name">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="last name">
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Type your content here..." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
             </center>
             <br/>
             <br/>
